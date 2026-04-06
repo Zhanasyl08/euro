@@ -60,7 +60,7 @@ $orange: #ffb202;
 .main-logo img {
     width: 160px;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .menu ul {
@@ -228,9 +228,7 @@ $orange: #ffb202;
     }
 }
 
-.main_subtitle {
 
-}
 .main_subtitle p {
     color:$white;
     font-size: 20px;
@@ -238,4 +236,68 @@ $orange: #ffb202;
         font-size: 18px;
         
     }
+}
+
+.main-info {
+    display:flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    @media (max-width:$md3){
+        width:450px;
+    }
+
+}
+.main_date {
+    color: $white;
+    font-size: 25px;
+}
+
+.main_pipe {
+    border-left: 2px solid #ffffff; height: 50px;
+    margin-left:20px;
+    margin-top: -10px;
+}
+
+.main_city {
+    color: $white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.main_loc{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    @media (max-width: $md3){
+        width:500px;
+    }
+}
+.loc-img img{
+    height:20px;
+    width:20px;
+}
+
+.loc {
+    font-size:14px;
+    
+}
+.loc a {
+    &:hover {
+        color: $grey; 
+    }
+}
+
+.main-button button{
+  background-color: transparent; 
+  border: 1px solid $orange;
+  color: $orange; 
+  padding: 25px 103px;
+  margin-top: 50px;
+  font-size:22px;
+  border-radius: 20px;
+
+}
+
+.main-button button:hover {
+    background-color: $orange;
+    color: whitesmoke;
 }
