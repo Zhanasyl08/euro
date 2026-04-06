@@ -214,11 +214,18 @@ $orange: #ffb202;
 
 .main_title {
     margin-top: 140px;
+    @media(max-width:$md3){
+        margin-top: 120px;
+    }
 
 }
 .main_title h1 {
     color:$white;
     font-size: 60px;
+    @media (max-width: $md3){
+        font-size: 27px;
+        width: 450px;
+    }
 }
 
 .main_subtitle {
@@ -227,4 +234,8 @@ $orange: #ffb202;
 .main_subtitle p {
     color:$white;
     font-size: 20px;
+    @media (max-width: $md3){
+        font-size: 18px;
+        
+    }
 }
