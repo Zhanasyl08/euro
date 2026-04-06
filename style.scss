@@ -148,3 +148,83 @@ $orange: #ffb202;
     justify-content: space-between;
     align-items: center;
 }
+
+
+.btn-partner{
+    border: $white;
+}
+.btn-partner button{
+     background-color: transparent; 
+  border: 2px solid #dadada;
+  color: #ffffff; 
+  padding: 10px 20px;
+  border-radius: 10px;
+  width:160px;
+    @media (max-width: $md2){
+        display: none;
+    }
+
+}
+
+.main-btn{
+    display: flex;
+    gap:10px; 
+}
+.btn-partner button:hover {
+    background-color: #dadada;
+    color: rgb(4, 4, 147);
+}
+
+.btn-ticket button{
+  border-radius: 10px;
+  background-color: #ffbb00; 
+  border: 2px solid #ffbb00;
+  color: #ffffff; 
+  padding: 10px 20px;
+  font-weight: bold;
+  width:180px;
+  height:45px;
+  font-size: 17px;
+  @media (max-width: $md2){
+    display: none;
+  }
+}
+
+.main-row {
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+
+.lang {
+    display:flex;
+    align-items: center;
+    background-color: transparent; 
+    @media (max-width:$md2){
+        display:none;
+    }
+
+}
+
+.lang select {
+    background-color: transparent;
+    color: $white;
+    font-size:20px;
+}
+
+.main_title {
+    margin-top: 140px;
+
+}
+.main_title h1 {
+    color:$white;
+    font-size: 60px;
+}
+
+.main_subtitle {
+
+}
+.main_subtitle p {
+    color:$white;
+    font-size: 20px;
+}
