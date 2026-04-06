@@ -4,71 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euro Quryltai</title>
-
-    <!-- ПОДКЛЮЧАЕМ CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="main">
         <div class="_container">
-
             <div class="main_body">
-
-             <header class="header">
-                <div class="main-logo">
-  <img src="./img/logo.png" class="logo"></img> </div>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#forum">О форуме</a></li>
-    <li><a href="#tariff">Тарифы</a></li>
-    <li><a href="#organisation">Организаторы</a></li>
-    <li><a href="#contact">Контакты</a></li>
-  </ul>
-</header>
-
-                    <div class="button_partner"></div>
-
-                    <div class="button_ticket"></div>
-
-                    <div class="main_lang"></div>
-
-                        
-
+                <header class="header">
+                    <div class="main-logo">
+                        <img src="./img/logo.png" alt="logo">
                     </div>
 
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#forum">О форуме</a></li>
+                            <li><a href="#tariff">Тарифы</a></li>
+                            <li><a href="#organization">Организаторы</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="hamburger" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </header>
 
-                    <div class="main_title"></div>
-
-                    <div class="main_subtitle"></div>
-
-                    <div class="main-info">
-                        <div class="main_date"></div>
-                        <div class="main_city"></div>
-                        <div class="main_loc"></div>
+                <!-- Полноэкранный попап меню -->
+                <div class="popup-menu">
+                    <div class="popup-header">
+                        <span id="close-popup" class="close-popup">&times;</span>
                     </div>
+                    <ul>
+                        <li><a href="#forum">О форуме</a></li>
+                        <li><a href="#tariff">Тарифы</a></li>
+                        <li><a href="#organization">Организаторы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
 
-                    <div class="main-button"></div>
+                <div class="main_title"></div>
+                <div class="main_subtitle"></div>
+                <div class="main-info">
+                    <div class="main_date"></div>
+                    <div class="main_city"></div>
+                    <div class="main_loc"></div>
+                </div>
+                <div class="main-button"></div>
 
-                    <div class="main_flag">
-                        <div class="main_tajik"></div>
-                        <div class="main_kyrgyz"></div>
-                        <div class="main_india"></div>
-                        <div class="main_uzb"></div>
-                        <div class="main_euro"></div>
-                        <div class="main_kz"></div>
-                        <div class="main_russia"></div>
-                        <div class="main_usa"></div>
-                    </div>
-
+                <div class="main_flag">
+                    <div class="main_tajik"></div>
+                    <div class="main_kyrgyz"></div>
+                    <div class="main_india"></div>
+                    <div class="main_uzb"></div>
+                    <div class="main_euro"></div>
+                    <div class="main_kz"></div>
+                    <div class="main_russia"></div>
+                    <div class="main_usa"></div>
                 </div>
 
             </div>
-
         </div>
     </div>
 
+    <script src="./script.js">
+       
+    </script>
 </body>
 </html>

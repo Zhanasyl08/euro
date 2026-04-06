@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-a {
-    text-decoration: none;
-    color:white;
-    &:hover {
-        color: rgb(66, 0, 159)
-
-    }
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-// Переменные для блока
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: rgb(66, 0, 159);
+    }
+}
+
+// Переменные
 $minWidth: 320px;
 $maxWidth: 1280px;
 $maxWidthCon: 1280px;
@@ -22,7 +23,6 @@ $md2: 991.98px;
 $md3: 767.98px;
 $md4: 479.98px;
 
-// Переменные для Цвета
 $black: #212121;
 $white: #ffffff;
 $main: #1c4ea4;
@@ -30,7 +30,7 @@ $grey: #aeaeae;
 $footer: #03313b;
 $orange: #ffb202;
 
-// КОНТЕЙНЕР
+// Контейнер
 ._container {
   max-width: $maxWidthCon;
   margin: 0 auto;
@@ -54,136 +54,97 @@ $orange: #ffb202;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    min-height: 100vh; 
-
+    min-height: 100vh;
 }
 
 .main-logo img {
-  width: 160px;
-  height: auto;
-  margin-top: 40px;
+    width: 160px;
+    height: 100px;
+    margin-top: 40px;
 }
 
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    @media (max-width: $md2) {
+        display: none;
+    }
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+    }
+
+    @media (max-width: $md2) {
+        display: flex;
+    }
+}
+
+.popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li a {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            &:hover {
+                color: $main;
+            }
+        }
+    }
+
+    .popup-header {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .close-popup {
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            color: $main;
+        }
+    }
+
+    &.active {
+        display: flex;
+    }
+}
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-  color: $white;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: $white;
-
-}
-
-
-
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: $white;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: $white;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-
-
-
-@media (min-width: 768px) {
-  .menu {
-    max-height: none !important;
     display: flex;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-}
-
-.menu {
-  display: flex;
-  gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
