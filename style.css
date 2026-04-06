@@ -45,15 +45,17 @@ a:hover {
 }
 
 .main-logo img {
-  width: 160px;
-  height: 100px;
+  width: 150px;
+  height: 95px;
   margin-top: 20px;
 }
 
 .menu ul {
+  margin-top: 30px;
   display: flex;
   gap: 20px;
   list-style: none;
+  font-size: 15px;
 }
 @media (max-width: 991.98px) {
   .menu ul {
@@ -142,9 +144,11 @@ a:hover {
   background-color: transparent;
   border: 2px solid #dadada;
   color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 160px;
+  border-radius: 5px;
+  width: 120px;
+  height: 45px;
+  font-size: 12px;
+  align-self: center;
 }
 @media (max-width: 991.98px) {
   .btn-partner button {
@@ -163,15 +167,15 @@ a:hover {
 }
 
 .btn-ticket button {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffbb00;
   border: 2px solid #ffbb00;
   color: #ffffff;
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: 300px;
   width: 180px;
   height: 45px;
-  font-size: 17px;
+  font-size: 15px;
 }
 @media (max-width: 991.98px) {
   .btn-ticket button {
@@ -199,7 +203,7 @@ a:hover {
 .lang select {
   background-color: transparent;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .main_title {
@@ -213,7 +217,7 @@ a:hover {
 
 .main_title h1 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 58px;
 }
 @media (max-width: 767.98px) {
   .main_title h1 {
@@ -235,7 +239,7 @@ a:hover {
 .main-info {
   display: flex;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 @media (max-width: 767.98px) {
   .main-info {
@@ -245,7 +249,7 @@ a:hover {
 
 .main_date {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .main_pipe {
@@ -257,7 +261,7 @@ a:hover {
 
 .main_city {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 22px;
   margin-left: 20px;
 }
 
@@ -290,7 +294,7 @@ a:hover {
   border: 1px solid #ffb202;
   color: #ffb202;
   padding: 25px 103px;
-  margin-top: 50px;
+  margin-top: 55px;
   font-size: 22px;
   border-radius: 20px;
 }
@@ -302,18 +306,25 @@ a:hover {
 
 .main_flag img {
   height: 87px;
-  width: 145px;
+  width: auto;
+  display: flex;
 }
 @media (max-width: 1280px) {
   .main_flag img {
     height: 60px;
-    width: 105px;
   }
 }
 @media (max-width: 991.98px) {
   .main_flag img {
     height: 87px;
-    width: 145px;
+    width: 143px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main_flag img {
+    height: 43px;
+    width: auto;
   }
 }
 
@@ -322,4 +333,19 @@ a:hover {
   margin-top: 50px;
   gap: 10px;
   margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .main_flag {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+.forum {
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-color: rgba(6, 1, 84, 0.788);
 }/*# sourceMappingURL=style.css.map */

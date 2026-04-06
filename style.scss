@@ -58,15 +58,17 @@ $orange: #ffb202;
 }
 
 .main-logo img {
-    width: 160px;
-    height: 100px;
+    width: 150px;
+    height: 95px;
     margin-top: 20px;
 }
 
 .menu ul {
+    margin-top:30px; 
     display: flex;
     gap: 20px;
     list-style: none;
+    font-size: 15px;
 
     @media (max-width: $md2) {
         display: none;
@@ -157,9 +159,11 @@ $orange: #ffb202;
      background-color: transparent; 
   border: 2px solid #dadada;
   color: #ffffff; 
-  padding: 10px 20px;
-  border-radius: 10px;
-  width:160px;
+  border-radius: 5px;
+  width:120px;
+  height: 45px;
+  font-size: 12px;
+  align-self: center;
     @media (max-width: $md2){
         display: none;
     }
@@ -176,15 +180,15 @@ $orange: #ffb202;
 }
 
 .btn-ticket button{
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffbb00; 
   border: 2px solid #ffbb00;
   color: #ffffff; 
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: 300px;
   width:180px;
   height:45px;
-  font-size: 17px;
+  font-size: 15px;
   @media (max-width: $md2){
     display: none;
   }
@@ -209,7 +213,7 @@ $orange: #ffb202;
 .lang select {
     background-color: transparent;
     color: $white;
-    font-size:20px;
+    font-size:15px;
 }
 
 .main_title {
@@ -221,7 +225,7 @@ $orange: #ffb202;
 }
 .main_title h1 {
     color:$white;
-    font-size: 60px;
+    font-size: 58px;
     @media (max-width: $md3){
         font-size: 27px;
         width: 450px;
@@ -241,7 +245,7 @@ $orange: #ffb202;
 .main-info {
     display:flex;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 20px;
     @media (max-width:$md3){
         width:450px;
     }
@@ -249,7 +253,7 @@ $orange: #ffb202;
 }
 .main_date {
     color: $white;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .main_pipe {
@@ -260,7 +264,7 @@ $orange: #ffb202;
 
 .main_city {
     color: $white;
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 20px;
 }
 .main_loc{
@@ -291,7 +295,7 @@ $orange: #ffb202;
   border: 1px solid $orange;
   color: $orange; 
   padding: 25px 103px;
-  margin-top: 50px;
+  margin-top: 55px;
   font-size:22px;
   border-radius: 20px;
 
@@ -304,14 +308,19 @@ $orange: #ffb202;
 
 .main_flag img{
     height:87px;
-    width: 145px;
+    width: auto;
+    display: flex;
     @media (max-width:$md1){
         height:60px;
-        width:105px;
     }
-    @media (max-width: $md2){
+   @media (max-width: $md2){
         height:87px;
-        width: 145px;
+        width:143px;
+         margin-bottom: 20px;
+    }
+    @media (max-width: $md3){
+        height:43px;
+        width: auto;
 
     }
 }
@@ -320,4 +329,23 @@ $orange: #ffb202;
     margin-top: 50px;
     gap:10px;
     margin-bottom: 40px;
+    @media (max-width: $md2){
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+   
+}
+
+
+
+.forum {
+    font-family: "Montserrat", sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    background-color: rgba(6, 1, 84, 0.788);
+}
+.about {
+
 }
