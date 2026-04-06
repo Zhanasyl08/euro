@@ -41,7 +41,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .main-logo img {
@@ -298,4 +298,28 @@ a:hover {
 .main-button button:hover {
   background-color: #ffb202;
   color: whitesmoke;
+}
+
+.main_flag img {
+  height: 87px;
+  width: 145px;
+}
+@media (max-width: 1280px) {
+  .main_flag img {
+    height: 60px;
+    width: 105px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main_flag img {
+    height: 87px;
+    width: 145px;
+  }
+}
+
+.main_flag {
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

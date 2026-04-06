@@ -54,7 +54,7 @@ $orange: #ffb202;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .main-logo img {
@@ -300,4 +300,24 @@ $orange: #ffb202;
 .main-button button:hover {
     background-color: $orange;
     color: whitesmoke;
+}
+
+.main_flag img{
+    height:87px;
+    width: 145px;
+    @media (max-width:$md1){
+        height:60px;
+        width:105px;
+    }
+    @media (max-width: $md2){
+        height:87px;
+        width: 145px;
+
+    }
+}
+.main_flag {
+    display:flex;
+    margin-top: 50px;
+    gap:10px;
+    margin-bottom: 40px;
 }
