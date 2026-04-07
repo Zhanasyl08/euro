@@ -43,6 +43,14 @@ a:hover {
   background-repeat: no-repeat;
   min-height: 110vh;
 }
+@media (max-width: 767.98px) {
+  .main_body_info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
 
 .main-logo img {
   width: 150px;
@@ -225,7 +233,6 @@ a:hover {
 @media (max-width: 767.98px) {
   .main_title h1 {
     font-size: 27px;
-    width: 450px;
   }
 }
 
@@ -246,7 +253,10 @@ a:hover {
 }
 @media (max-width: 767.98px) {
   .main-info {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -272,11 +282,6 @@ a:hover {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-}
-@media (max-width: 767.98px) {
-  .main_loc {
-    width: 500px;
-  }
 }
 
 .loc-img img {
@@ -309,40 +314,37 @@ a:hover {
   color: whitesmoke;
 }
 
-.main_flag img {
-  height: 87px;
-  width: auto;
-  display: flex;
+.main_flag {
+  display: grid;
+  margin-top: 50px;
+  gap: 10px;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(8, 1fr);
 }
-@media (max-width: 1280px) {
-  .main_flag img {
-    height: 60px;
+@media (max-width: 991.98px) {
+  .main_flag {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .main_flag {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.main_flag img {
+  height: 75px;
+  width: 100%;
 }
 @media (max-width: 991.98px) {
   .main_flag img {
-    height: 87px;
-    width: 143px;
-    margin-bottom: 20px;
+    height: 85px;
+    width: 100%;
   }
 }
 @media (max-width: 767.98px) {
   .main_flag img {
-    height: 43px;
-    width: auto;
-  }
-}
-
-.main_flag {
-  display: flex;
-  margin-top: 50px;
-  gap: 10px;
-  margin-bottom: 40px;
-}
-@media (max-width: 991.98px) {
-  .main_flag {
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    height: 100px;
+    width: 100%;
   }
 }
 

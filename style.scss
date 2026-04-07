@@ -55,6 +55,17 @@ $orange: #ffb202;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 110vh;
+    &_body_info {
+        @media(max-width: $md3){
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            
+        }
+
+    }
+    
 }
 
 .main-logo img {
@@ -231,7 +242,6 @@ $orange: #ffb202;
     font-size: 58px;
     @media (max-width: $md3){
         font-size: 27px;
-        width: 450px;
     }
 }
 
@@ -249,9 +259,13 @@ $orange: #ffb202;
     display:flex;
     margin-top: 30px;
     margin-left: 20px;
-    @media (max-width:$md3){
-        width:450px;
+    @media(max-width: $md3){
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
+  
 
 }
 .main_date {
@@ -274,9 +288,7 @@ $orange: #ffb202;
     display:flex;
     gap:15px;
     margin-top:20px;
-    @media (max-width: $md3){
-        width:500px;
-    }
+  
 }
 .loc-img img{
     height:25px;
@@ -311,34 +323,34 @@ $orange: #ffb202;
     color: whitesmoke;
 }
 
-.main_flag img{
-    height:87px;
-    width: auto;
-    display: flex;
-    @media (max-width:$md1){
-        height:60px;
-    }
-   @media (max-width: $md2){
-        height:87px;
-        width:143px;
-         margin-bottom: 20px;
-    }
-    @media (max-width: $md3){
-        height:43px;
-        width: auto;
 
-    }
-}
 .main_flag {
-    display:flex;
+    display:grid;
     margin-top: 50px;
     gap:10px;
     margin-bottom: 40px;
+    grid-template-columns: repeat(8, 1fr);
     @media (max-width: $md2){
-        flex-wrap: wrap;
-        margin-bottom: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media (max-width: $md3){
+    grid-template-columns: repeat(2, 1fr);
+    
+    
     }
-   
+}
+img {
+    height: 75px;
+    width: 100%;
+    @media(max-width: $md2){
+        height: 85px;
+        width: 100%;
+    }
+     @media(max-width: $md3){
+        height: 100px;
+        width: 100%;
+    }
+}
 }
 
 
