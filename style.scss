@@ -635,6 +635,8 @@ $orange: #ffb202;
     display:grid;
     grid-area: section;
     gap: 5px;
+   
+    
      @media(max-width: $md3){
         height: 120px;
         width:100%;
@@ -651,6 +653,12 @@ $orange: #ffb202;
     z-index: 3;
     
     align-content: center;
+     @media(max-width: $md1){
+        font-size:10px;
+     }
+      @media(max-width: $md2){
+        font-size: 12px;
+     }
 
 }
 
@@ -663,6 +671,12 @@ $orange: #ffb202;
     z-index: 3;
     display: flex;
     margin-top: 10px;
+     @media(max-width: $md1){
+        font-size:16px;
+     }
+     @media(max-width: $md2){
+        font-size: 18px;
+     }
 }
 
 .item-network {
@@ -685,35 +699,42 @@ $orange: #ffb202;
         width: 100%;
     }
 }
+item-network {
+    border: 1px solid #1c4ea4;
+    border-radius: 10px;
+    padding: 15px;
+    width: 420px;
+    height: 260px;
+    display: flex;                // flex вместо grid
+    flex-direction: column;       // блоки сверху вниз
+    justify-content: center;      // по вертикали
+    align-items: center;          // по горизонтали
+    gap: 10px;                    // расстояние между текстом
+    color: #ffffff;
+    grid-area: network;
+
+    @media(max-width: $md3){
+        width: 100%;
+        height: auto;             // чтобы блок расширялся по тексту
+        padding: 20px;
+    }
+}
+
+.item-network__title,
+.item-network__subtitle {
+    margin: 0;                    // убираем все margin, которые сдвигают текст
+    text-align: center;
+    display: block;               // блок для корректного центрирования
+}
+
 .item-network__title {
-       color: $white;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 0px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    @media(max-width:$md3){
-        margin-top: 0px;
-    }
-      @media(max-width:$md2){
-        margin-top: 0px;
-    }
-
 }
 
 .item-network__subtitle {
-    color: $white;
     font-size: 12px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    margin-bottom: 80px;
-
 }
 
 .item-show {
@@ -806,7 +827,7 @@ $orange: #ffb202;
 .item-meet,
 .item-show,
 .item-award,
-.item-section {
+.item-section{
     @media(max-width: $md2){
     display: flex;
     flex-direction: column;
@@ -819,4 +840,97 @@ $orange: #ffb202;
 .box {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.item-button button {
+    border: 1px solid $orange;
+    background-color: transparent;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 70px;
+    border-radius: 20px;
+    padding: 20px;
+    color: $orange;
+    &:hover {
+        color: $white;
+        background-color: $orange;
+    }
+}
+
+.item-button {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fair {
+    color: $white;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 80px;
+    @media (max-width: $md3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        width: 100%;
+    }
+}
+
+.fair_subtitle {
+    font-size: 20px;
+    color: $white;
+    margin-top: 5px;
+       @media (max-width: $md3) {
+        display: flex;               
+        justify-content: center;     
+        align-items: center;          
+        text-align: center;           
+        font-size: 16px;
+        width: 100%;              
+    }
+}
+
+.forum-btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 120px;
+    @media (max-width: $md3){
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.btn-sp button{
+   border: 1px solid $orange;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+    color: $orange;
+    &:hover {
+        color: $white;
+        background-color: $orange;
+    }
+
+}
+
+.btn-cso button{
+   border: 1px solid $orange;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+    color: $orange;
+    &:hover {
+        color: $white;
+        background-color: $orange;
+    }
 }
