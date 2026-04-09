@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Euro Quryltai</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <section class="main">
@@ -19,7 +22,7 @@
               <div class="main-row">
                 <nav class="menu">
                   <ul>
-                    <li><a href="#forum">О форуме</a></li>
+                    <li><a href="#forum" data-i18n="abtfr">О форуме</a></li>
                     <li><a href="#tariff">Тарифы</a></li>
                     <li><a href="#organization">Организаторы</a></li>
                     <li><a href="#contact">Контакты</a></li>
@@ -118,7 +121,7 @@
       </div>
     </section>
 
-    <div class="forum">
+    <section class="forum" id="forum">
       <div class="_container">
         <div class="forum-body">
           <div id="about"><h1>О Форуме</h1></div>
@@ -134,7 +137,7 @@
               >
             </div>
           </div>
-                <div class="forum-info">
+          <div class="forum-info">
             <div class="forum-info-item">
               <div class="counter"><span>20+</span></div>
               <div class="label">СТРАН</div>
@@ -148,84 +151,82 @@
               <div class="label">СПИКЕРОВ</div>
             </div>
           </div>
-          </div>
-          <div class="count-item">До начала мероприятия осталось:</div>
-          <div class="countdown">
-            <ul>
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
+        </div>
+        <div class="count-item">До начала мероприятия осталось:</div>
+        <div class="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
 
-          <div class="box-title">
-            <h1>ЧТО ВЫ ПОЛУЧИТЕ</h1>
-          </div>
-          <div class="box">
-            <div class="item-meet">
-              <div class="item__title">Пленарные заседания</div>
-              <div class="item__subtitle">
-                <p>
-                  Выступления ведущих экспертов в области КСО, ESG,
-                  представителей бизнеса, государства и международных
-                  организаций и фондов.
-                </p>
-              </div>
-            </div>
-            <div class="item-network">
-              <div class="item-network__title">Networking</div>
-              <div class="item-network__subtitle">
-                <p>
-                  Возможности для налаживания деловых связей и партнерства между
-                  заинтересованными лицами
-                </p>
-              </div>
-            </div>
-            <div class="item-show">
-              <div class="item-show__title">Выставка и ярмарка</div>
-              <div class="item-show__subtitle">
-                <p>
-                  Демонстрация успешных КСО проектов и продукции социальных
-                  предпринимателей.
-                </p>
-              </div>
-            </div>
-            <div class="item-section">
-              <div class="item-section__title">Секционные заседания</div>
-              <div class="item__subtitle">
-                <p>
-                  Тематические сессии по актуальным вопросам, таким как наука и
-                  исследования в социальном предпринимательстве, занятость
-                  социальных групп, инновации в КСО, стандарты ESG.
-                </p>
-              </div>
-            </div>
-            <div class="item-award">
-              <div class="item-award__title">Награждение</div>
-              <div class="item-award__subtitle">
-                <p>
-                  Подведение итогов и признание достижений в области КСО и
-                  социального предпринимательства.
-                </p>
-              </div>
+        <div class="box-title">
+          <h1>ЧТО ВЫ ПОЛУЧИТЕ</h1>
+        </div>
+        <div class="box">
+          <div class="item-meet">
+            <div class="item__title">Пленарные заседания</div>
+            <div class="item__subtitle">
+              <p>
+                Выступления ведущих экспертов в области КСО, ESG, представителей
+                бизнеса, государства и международных организаций и фондов.
+              </p>
             </div>
           </div>
-
-          <div class="item-button"><button>Программа</button></div>
-          <div class="fair">Выставка</div>
-          <div class="fair_subtitle">
-            Социальные бизнесы, кейсы, демонстрирующие вклад бизнеса в развитие
-            и успешный запуск проектов
+          <div class="item-network">
+            <div class="item-network__title">Networking</div>
+            <div class="item-network__subtitle">
+              <p>
+                Возможности для налаживания деловых связей и партнерства между
+                заинтересованными лицами
+              </p>
+            </div>
           </div>
-
-          <div class="forum-btn">
-            <div class="btn-sp"><button>Конкурс для СП</button></div>
-            <div class="btn-cso"><button>Конкурс для КСО</button></div>
+          <div class="item-show">
+            <div class="item-show__title">Выставка и ярмарка</div>
+            <div class="item-show__subtitle">
+              <p>
+                Демонстрация успешных КСО проектов и продукции социальных
+                предпринимателей.
+              </p>
+            </div>
+          </div>
+          <div class="item-section">
+            <div class="item-section__title">Секционные заседания</div>
+            <div class="item__subtitle">
+              <p>
+                Тематические сессии по актуальным вопросам, таким как наука и
+                исследования в социальном предпринимательстве, занятость
+                социальных групп, инновации в КСО, стандарты ESG.
+              </p>
+            </div>
+          </div>
+          <div class="item-award">
+            <div class="item-award__title">Награждение</div>
+            <div class="item-award__subtitle">
+              <p>
+                Подведение итогов и признание достижений в области КСО и
+                социального предпринимательства.
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="item-button"><button>Программа</button></div>
+        <div class="fair">Выставка</div>
+        <div class="fair_subtitle">
+          Социальные бизнесы, кейсы, демонстрирующие вклад бизнеса в развитие и
+          успешный запуск проектов
+        </div>
+
+        <div class="forum-btn">
+          <div class="btn-sp"><button>Конкурс для СП</button></div>
+          <div class="btn-cso"><button>Конкурс для КСО</button></div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <section class="tariff" id="tariff">
       <div class="_container">
@@ -316,7 +317,7 @@
       </div>
     </section>
 
-    <section class="organ">
+    <section class="organ" id="organization">
       <div class="_container">
         <div class="organ_title">ОРГАНИЗАТОРЫ ФОРУМА</div>
         <div class="organ_block">
@@ -340,66 +341,83 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="contact">
       <div class="_container">
         <div class="footer_body">
           <div class="footer_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20034.329260816517!2d71.44238975989006!3d51.121537289615226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1775726210757!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20034.329260816517!2d71.44238975989006!3d51.121537289615226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1775726210757!5m2!1sru!2skz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           <div class="footer_feedback">
             <div class="footer_feedback__item">
-              <div class="footer_feedback__item_city">
-                Казахстан, г. Астана
-
+              <div class="footer_feedback__item_city">Казахстан, г. Астана</div>
+              <div class="footer_feedback__item_contact">Контакты:</div>
+              <div class="footer_feedback__item_tel">Тел: +7 707 170 7036</div>
+              <div class="footer_feedback__item_mail">
+                Email: asiqazaqstan@gmail.com
+              </div>
             </div>
-            <div class="footer_feedback__item_contact">
-Контакты:
-            </div>
-            <div class="footer_feedback__item_tel">
-Тел: +7 707 170 7036
-            </div>
-            <div class="footer_feedback__item_mail">
-Email: asiqazaqstan@gmail.com
-            </div>
-          </div>
             <div class="footer_feedback__item">
               <div class="footer_feedback__item_list">О форуме</div>
               <div class="footer_feedback__item_list">Тарифы</div>
               <div class="footer_feedback__item_list">Организаторы</div>
               <div class="footer_feedback__item_list">Контакты</div>
-            <div class="footer_feedback__item_social">
-              <div class="footer_feedback__item_social_icon">
-<a href="ссылка"><i class="fab fa-instagram"></i></a>
+              <div class="footer_feedback__item_social">
+                <div class="footer_feedback__item_social_icon">
+                  <a href="ссылка"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer_feedback__item_social_icon">
+                  <a href="ссылка"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer_feedback__item_social_icon">
+                  <a href="ссылка"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="footer_feedback__item_social_icon">
+                  <a href="ссылка"><i class="fab fa-whatsapp"></i></a>
+                </div>
               </div>
-              <div class="footer_feedback__item_social_icon">
-<a href="ссылка"><i class="fab fa-youtube"></i></a>
-              </div>
-              <div class="footer_feedback__item_social_icon">
-<a href="ссылка"><i class="fab fa-facebook"></i></a>
-              </div>
-              <div class="footer_feedback__item_social_icon">
-<a href="ссылка"><i class="fab fa-whatsapp"></i></a>
-              </div>
-            </div>
             </div>
             <div class="footer_feedback__item">
               <div class="footer_feedback__item_img">
-                <img src="./img/footer_logo.svg" alt="logo">
+                <img src="./img/footer_logo.svg" alt="logo" />
               </div>
             </div>
             <div class="footer_feedback__item">
-              <div class="footer_feedback__item_text">Евразийский Құрылтай — это центр идей и возможностей для развития социального бизнеса и устойчивого будущего.</div>
-              <div class="footer_feedback__item_text">Евразийский Құрылтай социальных предпринимателей — это крупнейшая международная площадка для обмена опытом, обсуждения инноваций и создания партнерств в области социального бизнеса и устойчивого развития.<br></div>
-              <div class="footer_feedback__item_text">Евразийский Құрылтай социальных предпринимателей — это уникальная возможность для лидеров социального бизнеса из 20 стран объединиться, чтобы вдохновляться новыми идеями, находить решения глобальных вызовов и расширять границы социального предпринимательства<br>.</div>
+              <div class="footer_feedback__item_text">
+                Евразийский Құрылтай — это центр идей и возможностей для
+                развития социального бизнеса и устойчивого будущего.
+              </div>
+              <div class="footer_feedback__item_text">
+                Евразийский Құрылтай социальных предпринимателей — это
+                крупнейшая международная площадка для обмена опытом, обсуждения
+                инноваций и создания партнерств в области социального бизнеса и
+                устойчивого развития.<br />
+              </div>
+              <div class="footer_feedback__item_text">
+                Евразийский Құрылтай социальных предпринимателей — это
+                уникальная возможность для лидеров социального бизнеса из 20
+                стран объединиться, чтобы вдохновляться новыми идеями, находить
+                решения глобальных вызовов и расширять границы социального
+                предпринимательства.
+              </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
 
     <script src="./script.js"></script>
+    <script>
+      translatePage(); // Перевод при загрузке
+    </script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>

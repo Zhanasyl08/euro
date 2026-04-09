@@ -112,7 +112,7 @@ $orange: #ffb202;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(7, 0, 64, 0.95);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ $orange: #ffb202;
       font-size: 24px;
       text-align: center;
       &:hover {
-        color: $main;
+        color: $orange;
       }
     }
   }

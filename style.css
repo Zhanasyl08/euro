@@ -101,7 +101,7 @@ a:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(7, 0, 64, 0.95);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -119,7 +119,7 @@ a:hover {
   text-align: center;
 }
 .popup-menu ul li a:hover {
-  color: #1c4ea4;
+  color: #ffb202;
 }
 .popup-menu .popup-header {
   position: absolute;
