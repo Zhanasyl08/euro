@@ -1556,6 +1556,10 @@ a:hover {
   width: auto;
 }
 .footer_feedback__item_text {
+  display: flex;
+  gap: 20px;
   color: gray;
   font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

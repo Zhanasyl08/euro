@@ -1442,8 +1442,12 @@ $orange: #ffb202;
         width: auto;
       }
       &_text {
+        display: flex;
+        gap: 20px;
         color: gray;
         font-size: 11px;
+        line-height: 1.6;
+        margin-bottom: 15px;
       }
     }
   }
